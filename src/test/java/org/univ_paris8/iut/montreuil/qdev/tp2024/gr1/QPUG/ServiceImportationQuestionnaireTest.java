@@ -1,13 +1,17 @@
 package org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.entities.dto.QuestionnaireDTO;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.exceptions.*;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.impl.mocks.QuestionnaireInterfaceMockManquant;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.impl.mocks.QuestionnaireInterfaceMockOk;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.impl.mocks.QuestionnaireInterfaceMockVide;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.models.QuestionnaireInterface;
 
 public class ServiceImportationQuestionnaireTest {
@@ -46,5 +50,45 @@ public class ServiceImportationQuestionnaireTest {
         catch (Exception e) {
             System.out.println("Erreur inattendu dans le test ajouterJoueurSimpleOKTest");
         }*/
+    }
+
+    @Test
+    // Test 3
+    // TO DO : voir si on rajoute avec Matthias des exception précise comme fichier vide pour ce cas la
+    void getQuestionnaireVideTest(){
+        // MOCK à supprimer lors de l'ajout du vrai service
+        serviceQuestionnaireImportImpl = new QuestionnaireInterfaceMockVide();
+
+        try{
+            // Vérifier que l'importation lance une FichierVideException
+            Exception exception = assertThrows(Exception.class, () -> {
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("chemin", 7);
+            });
+
+        }
+        catch (Exception e){
+            System.out.println("Erreur inattendu dans le test getQuestionnairevalideTest");
+        }
+
+    }
+
+    @Test
+        // Test 10
+        // TO DO : voir si on rajoute avec Matthias des exception précise comme fichier vide pour ce cas la
+    void getQuestionnaireManquantTest(){
+        // MOCK à supprimer lors de l'ajout du vrai service
+        serviceQuestionnaireImportImpl = new QuestionnaireInterfaceMockManquant();
+
+        try{
+            // Vérifier que l'importation lance une FichierVideException
+            FichierManquantException FichierManquantException = assertThrows(FichierManquantException.class, () -> {
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("chemin", 7);
+            });
+
+        }
+        catch (Exception e){
+            System.out.println("Erreur inattendu dans le test getQuestionnairevalideTest");
+        }
+
     }
 }
