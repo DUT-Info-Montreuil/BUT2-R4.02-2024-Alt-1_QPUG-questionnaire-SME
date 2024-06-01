@@ -6,8 +6,8 @@ import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.Fichi
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.FichierManquantException;
 
 public class QuestionnaireInterfaceMockOk implements QuestionnaireInterface {
-    public QuestionnaireDTO chargerQuestionnaire(String cheminVersFichierCSV) throws FichierInaccessibleException, FichierManquantException {
-        return null;
+    public QuestionnaireDTO chargerQuestionnaire(String cheminVersFichierCSV, int idQuestionnaire) throws FichierInaccessibleException, FichierManquantException {
+        return new QuestionnaireDTO(idQuestionnaire);
     }
 
     //public QuestionBO getQuestionBO() {} ;
