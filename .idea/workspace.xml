@@ -7,8 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e274a7a5-cb52-42de-aa57-c57669a637c1" name="Changes" comment="création de la classe ServiceChargerquestionnaireImpl et réglage des méthodes dans la classe QuestionBO.java et QuestionnaireDTO.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/utils/exceptions/QuestionnaireManquantException.java" afterDir="false" />
+    <list default="true" id="e274a7a5-cb52-42de-aa57-c57669a637c1" name="Changes" comment="Ajout d'un cas d'usage pour la fonction ChargerQuestionnaire">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/utils/exceptions/DonneesManquantesException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/impl/ServiceChargerquestionnaireImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/impl/ServiceChargerquestionnaireImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717425916585</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ajout d'un cas d'usage pour la fonction ChargerQuestionnaire">
+      <created>1717426746517</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717426746517</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +148,7 @@
     <MESSAGE value="creating branch" />
     <MESSAGE value="creation de la structure du package test : packages, mocks, classe de test" />
     <MESSAGE value="création de la classe ServiceChargerquestionnaireImpl et réglage des méthodes dans la classe QuestionBO.java et QuestionnaireDTO.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="création de la classe ServiceChargerquestionnaireImpl et réglage des méthodes dans la classe QuestionBO.java et QuestionnaireDTO.java" />
+    <MESSAGE value="Ajout d'un cas d'usage pour la fonction ChargerQuestionnaire" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'un cas d'usage pour la fonction ChargerQuestionnaire" />
   </component>
 </project>

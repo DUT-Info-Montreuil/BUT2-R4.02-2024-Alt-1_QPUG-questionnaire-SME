@@ -5,6 +5,7 @@ import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.entities.bo.QuestionBO
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.entities.dto.QuestionDTO;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.entities.dto.QuestionnaireDTO;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.services.models.QuestionnaireInterface;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.DonneesManquantesException;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.FichierInaccessibleException;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.FichierManquantException;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.QuestionnaireManquantException;
@@ -28,6 +29,9 @@ public class ServiceChargerquestionnaireImpl implements QuestionnaireInterface {
                 if (Integer.parseInt(lettreSuivante.get(ligne)[0]) == idQuestionnaire) {
                     QuestionBO q = new QuestionBO(lettreSuivante.get(ligne));
                     String[] q2 = q.getQuestionBO();
+                    if ( q2.length != 8){
+                        throw new DonneesManquantesException("Il y a des données manquantes");
+                    }
                     QuestionDTO questionDTO = new QuestionDTO(Integer.parseInt(q2[0]),Integer.parseInt(q2[1]),q2[2],q2[3],q2[4],q2[5],q2[6],q2[7]);
                     questionnaireDTO.addQuestionDTO(questionDTO);
                 }
@@ -36,11 +40,7 @@ public class ServiceChargerquestionnaireImpl implements QuestionnaireInterface {
                 throw new QuestionnaireManquantException("Le questionnaire que vous essayez de charger n'existe pas dans le fichier.");
             }
             return questionnaireDTO;
-            /**
-            ArrayList<String> tableau = new ArrayList<>();
-            tableau.add(""+ fichierEnString.charAt(0));
-            tableau.add(fichierEnString);
-            **/
+
         }catch(Exception e){
             throw new FichierInaccessibleException("Le fichier est inaccessible.");
         }
