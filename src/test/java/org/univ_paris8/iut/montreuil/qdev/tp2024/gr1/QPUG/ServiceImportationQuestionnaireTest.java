@@ -61,7 +61,7 @@ public class ServiceImportationQuestionnaireTest {
 
         try{
             // Vérifier que l'importation lance une FichierVideException
-            Exception exception = assertThrows(Exception.class, () -> {
+            QuestionnaireManquantException exception = assertThrows(QuestionnaireManquantException.class, () -> {
                 serviceQuestionnaireImportImpl.chargerQuestionnaire("chemin", 7);
             });
 
@@ -91,4 +91,11 @@ public class ServiceImportationQuestionnaireTest {
         }
 
     }
+
+    // TO DO
+    /*
+    fichier corrompu -> lance exception innaccessible
+
+     */
+
 }
