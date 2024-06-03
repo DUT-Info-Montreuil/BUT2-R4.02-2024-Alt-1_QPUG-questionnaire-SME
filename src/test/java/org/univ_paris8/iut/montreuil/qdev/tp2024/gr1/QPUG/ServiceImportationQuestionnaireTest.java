@@ -29,7 +29,7 @@ public class ServiceImportationQuestionnaireTest {
     }
 
     @Test
-    // test 2
+    // test 1
     void getQuestionnairevalideTest() {
         // MOCK à supprimer lors de l'ajout du vrai service
         serviceQuestionnaireImportImpl = new QuestionnaireInterfaceMockOk();
@@ -55,8 +55,7 @@ public class ServiceImportationQuestionnaireTest {
     }
 
     @Test
-    // Test 3
-    // TO DO : voir si on rajoute avec Matthias des exception précise comme fichier vide pour ce cas la
+    // Test 2
     void getQuestionnaireVideTest(){
         // MOCK à supprimer lors de l'ajout du vrai service
         serviceQuestionnaireImportImpl = new QuestionnaireInterfaceMockVide();
@@ -64,7 +63,7 @@ public class ServiceImportationQuestionnaireTest {
         try{
             // Vérifier que l'importation lance une FichierVideException
             QuestionnaireManquantException exception = assertThrows(QuestionnaireManquantException.class, () -> {
-                serviceQuestionnaireImportImpl.chargerQuestionnaire("chemin", 7);
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/FichierVide.csv", 7);
             });
 
         }
@@ -75,8 +74,7 @@ public class ServiceImportationQuestionnaireTest {
     }
 
     @Test
-        // Test 10
-        // TO DO : voir si on rajoute avec Matthias des exception précise comme fichier vide pour ce cas la
+        // Test 3
     void getQuestionnaireManquantTest(){
         // MOCK à supprimer lors de l'ajout du vrai service
         serviceQuestionnaireImportImpl = new QuestionnaireInterfaceMockManquant();
@@ -84,7 +82,7 @@ public class ServiceImportationQuestionnaireTest {
         try{
             // Vérifier que l'importation lance une FichierVideException
             FichierManquantException FichierManquantException = assertThrows(FichierManquantException.class, () -> {
-                serviceQuestionnaireImportImpl.chargerQuestionnaire("chemin", 7);
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/FichierManquant.csv", 7);
             });
 
         }
@@ -95,8 +93,8 @@ public class ServiceImportationQuestionnaireTest {
     }
 
     @Test
-        // Test ??
-    // quand le quesionnaire demandé n'existe pas
+        // Test 4
+    // quand le quesionnaire demandé dans le fichier n'existe pas
     void getQuestionnaireInexistantTest(){
         // MOCK à supprimer lors de l'ajout du vrai service
         serviceQuestionnaireImportImpl = new QuestionnaireInterfaceMockQuestionnaireInaccessible();
@@ -104,7 +102,7 @@ public class ServiceImportationQuestionnaireTest {
         try{
             // Vérifier que l'importation lance une FichierVideException
             FichierInaccessibleException FichierInaccException = assertThrows(FichierInaccessibleException.class, () -> {
-                serviceQuestionnaireImportImpl.chargerQuestionnaire("chemin", 7);
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/FichierQuestionnaireInexistant.csv", 7);
             });
 
         }
@@ -114,7 +112,7 @@ public class ServiceImportationQuestionnaireTest {
 
     }
     @Test
-        // Test ??
+        // Test 5
         // quand toutes les colonnes ne sont pas remplies
     void getQuestionnaireDonneesManquantesTest(){
         // MOCK à supprimer lors de l'ajout du vrai service
@@ -123,7 +121,7 @@ public class ServiceImportationQuestionnaireTest {
         try{
             // Vérifier que l'importation lance une FichierVideException
             DonneesManquantesException FichierInaccException = assertThrows(DonneesManquantesException.class, () -> {
-                serviceQuestionnaireImportImpl.chargerQuestionnaire("chemin", 7);
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/FichierDonneesManquante.csv", 7);
             });
 
         }
@@ -132,10 +130,5 @@ public class ServiceImportationQuestionnaireTest {
         }
 
     }
-
-    // TO DO
-    /*
-        exception données manquante -> toutes les colonnes non remplies
-     */
 
 }
