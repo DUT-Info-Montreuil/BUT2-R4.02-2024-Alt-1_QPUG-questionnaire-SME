@@ -7,14 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e274a7a5-cb52-42de-aa57-c57669a637c1" name="Changes" comment="creation de la structure du package test : packages, mocks, classe de test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/impl/ServiceChargerquestionnaireImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/QuestionBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/QuestionBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/dto/QuestionnaireDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/dto/QuestionnaireDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/mappers/MapperBOtoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/mappers/MapperBOtoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/models/QuestionnaireInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/models/QuestionnaireInterface.java" afterDir="false" />
+    <list default="true" id="e274a7a5-cb52-42de-aa57-c57669a637c1" name="Changes" comment="création de la classe ServiceChargerquestionnaireImpl et réglage des méthodes dans la classe QuestionBO.java et QuestionnaireDTO.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/utils/exceptions/QuestionnaireManquantException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/impl/ServiceChargerquestionnaireImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/impl/ServiceChargerquestionnaireImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717179844716</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="création de la classe ServiceChargerquestionnaireImpl et réglage des méthodes dans la classe QuestionBO.java et QuestionnaireDTO.java">
+      <created>1717425916585</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717425916585</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating branch" />
     <MESSAGE value="creation de la structure du package test : packages, mocks, classe de test" />
-    <option name="LAST_COMMIT_MESSAGE" value="creation de la structure du package test : packages, mocks, classe de test" />
+    <MESSAGE value="création de la classe ServiceChargerquestionnaireImpl et réglage des méthodes dans la classe QuestionBO.java et QuestionnaireDTO.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="création de la classe ServiceChargerquestionnaireImpl et réglage des méthodes dans la classe QuestionBO.java et QuestionnaireDTO.java" />
   </component>
 </project>
