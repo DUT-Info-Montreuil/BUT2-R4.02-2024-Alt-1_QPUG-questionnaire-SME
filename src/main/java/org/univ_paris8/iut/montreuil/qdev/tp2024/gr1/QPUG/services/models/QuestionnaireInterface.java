@@ -5,7 +5,7 @@ import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.Fichi
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.FichierManquantException;
 
 public interface QuestionnaireInterface {
-    public QuestionnaireDTO chargerQuestionnaire(String cheminVersFichierCSV) throws FichierInaccessibleException, FichierManquantException;
+    public QuestionnaireDTO chargerQuestionnaire(String cheminVersFichierCSV, int idQuestionnaire) throws FichierInaccessibleException, FichierManquantException;
 
     //public QuestionBO getQuestionBO() {} ;
     //public QuestionnaireDTO createQuestionnaire(){} ;

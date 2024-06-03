@@ -6,7 +6,6 @@ public class MapperBOtoDTO {
     private String cheminVersFichierCSV;
     public MapperBOtoDTO(String cheminVersFichierCSV){
         this.cheminVersFichierCSV=cheminVersFichierCSV;
-
     }
     /*
     public QuestionBO chargerQuestionBO(){

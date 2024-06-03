@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e274a7a5-cb52-42de-aa57-c57669a637c1" name="Changes" comment="creation de la structure du package test : packages, mocks, classe de test" />
+    <list default="true" id="e274a7a5-cb52-42de-aa57-c57669a637c1" name="Changes" comment="creation de la structure du package test : packages, mocks, classe de test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/impl/ServiceChargerquestionnaireImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/QuestionBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/QuestionBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/dto/QuestionnaireDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/dto/QuestionnaireDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/mappers/MapperBOtoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/mappers/MapperBOtoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/models/QuestionnaireInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/models/QuestionnaireInterface.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,11 +45,6 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="2hEyqAf3uBnc8ZrOKQ1t5cZUZ5k" />
   <component name="ProjectViewState">
@@ -51,9 +57,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/gaspa/IdeaProjects/BUT2-R4.02-2024-Alt-1_QPUG-questionnaire-SME/src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -109,7 +116,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
