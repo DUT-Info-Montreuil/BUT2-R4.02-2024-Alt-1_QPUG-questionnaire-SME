@@ -36,7 +36,7 @@ public class ServiceImportationQuestionnaireTest {
 
         QuestionnaireDTO questionnaireAttendu = new QuestionnaireDTO(7);
         try{
-            QuestionnaireDTO questionaireResultat = serviceQuestionnaireImportImpl.chargerQuestionnaire("cheminFichier",7);
+            QuestionnaireDTO questionaireResultat = serviceQuestionnaireImportImpl.chargerQuestionnaire("src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/questionsQuizz_V1.1.csv",1);
             assertEquals(questionnaireAttendu, questionaireResultat, "chargement d'un questionnaire valide");
         }
         catch (Exception e){
@@ -63,7 +63,7 @@ public class ServiceImportationQuestionnaireTest {
         try{
             // Vérifier que l'importation lance une FichierVideException
             QuestionnaireManquantException exception = assertThrows(QuestionnaireManquantException.class, () -> {
-                serviceQuestionnaireImportImpl.chargerQuestionnaire("src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/FichierVide.csv", 7);
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/FichierVide.csv", 1);
             });
 
         }
@@ -82,7 +82,7 @@ public class ServiceImportationQuestionnaireTest {
         try{
             // Vérifier que l'importation lance une FichierVideException
             FichierManquantException FichierManquantException = assertThrows(FichierManquantException.class, () -> {
-                serviceQuestionnaireImportImpl.chargerQuestionnaire("src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/FichierManquant.csv", 7);
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/FichierManquant.csv", 1);
             });
 
         }
@@ -121,7 +121,7 @@ public class ServiceImportationQuestionnaireTest {
         try{
             // Vérifier que l'importation lance une FichierVideException
             DonneesManquantesException FichierInaccException = assertThrows(DonneesManquantesException.class, () -> {
-                serviceQuestionnaireImportImpl.chargerQuestionnaire("src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/FichierDonneesManquante.csv", 7);
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/FichierDonneesManquante.csv", 1);
             });
 
         }
