@@ -11,7 +11,9 @@ import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.entities.dto.Questionn
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.exceptions.*;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.impl.mocks.QuestionnaireInterfaceMockManquant;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.impl.mocks.QuestionnaireInterfaceMockOk;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.impl.mocks.QuestionnaireInterfaceMockQuestionnaireInaccessible;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.impl.mocks.QuestionnaireInterfaceMockVide;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.impl.mocks.*;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.models.QuestionnaireInterface;
 
 public class ServiceImportationQuestionnaireTest {
@@ -92,10 +94,48 @@ public class ServiceImportationQuestionnaireTest {
 
     }
 
+    @Test
+        // Test ??
+    // quand le quesionnaire demandé n'existe pas
+    void getQuestionnaireInexistantTest(){
+        // MOCK à supprimer lors de l'ajout du vrai service
+        serviceQuestionnaireImportImpl = new QuestionnaireInterfaceMockQuestionnaireInaccessible();
+
+        try{
+            // Vérifier que l'importation lance une FichierVideException
+            FichierInaccessibleException FichierInaccException = assertThrows(FichierInaccessibleException.class, () -> {
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("chemin", 7);
+            });
+
+        }
+        catch (Exception e){
+            System.out.println("Erreur inattendu dans le test getQuestionnairevalideTest");
+        }
+
+    }
+    @Test
+        // Test ??
+        // quand toutes les colonnes ne sont pas remplies
+    void getQuestionnaireDonneesManquantesTest(){
+        // MOCK à supprimer lors de l'ajout du vrai service
+        serviceQuestionnaireImportImpl = new QuestionnaireInterfaceMockDonneesManquantes();
+
+        try{
+            // Vérifier que l'importation lance une FichierVideException
+            DonneesManquantesException FichierInaccException = assertThrows(DonneesManquantesException.class, () -> {
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("chemin", 7);
+            });
+
+        }
+        catch (Exception e){
+            System.out.println("Erreur inattendu dans le test getQuestionnairevalideTest");
+        }
+
+    }
+
     // TO DO
     /*
-    fichier corrompu -> lance exception innaccessible
-
+        exception données manquante -> toutes les colonnes non remplies
      */
 
 }
