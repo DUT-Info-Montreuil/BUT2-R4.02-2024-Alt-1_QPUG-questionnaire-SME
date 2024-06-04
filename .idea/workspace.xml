@@ -7,47 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e274a7a5-cb52-42de-aa57-c57669a637c1" name="Changes" comment="basculement de fichiers dans les bons dossiers">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/questionsQuizz_V1.1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/FichierDonneesManquante.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/FichierDonneesManquantes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/FichierQuestionnaireInexistant.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/FichierVide.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_opencsv_opencsv_5_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_opencsv_opencsv_5_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questionnaire_sme.iml" beforeDir="false" afterPath="$PROJECT_DIR$/questionnaire_sme.iml" afterDir="false" />
+    <list default="true" id="e274a7a5-cb52-42de-aa57-c57669a637c1" name="Changes" comment="Fonctionnement des tests">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/ServiceImportationQuestionnaireTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/ServiceImportationQuestionnaireTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockDonneesManquantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockDonneesManquantes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockManquant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockManquant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockOk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockOk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockQuestionnaireInaccessible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockQuestionnaireInaccessible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockVide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockVide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/impl/ServiceChargerquestionnaireImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/impl/ServiceChargerquestionnaireImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/models/QuestionnaireInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/models/QuestionnaireInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/utils/exceptions/FichierInaccessibleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/utils/exceptions/FichierIllisibleException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/QuestionBO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/QuestionBO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/dto/QuestionnaireDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/dto/QuestionnaireDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/mappers/MapperBOtoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/mappers/MapperBOtoDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/models/QuestionnaireInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/services/models/QuestionnaireInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/utils/exceptions/FichierInaccessibleException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/ServiceImportationQuestionnaireTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/bo/QuestionBO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/dto/QuestionDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/dto/QuestionnaireDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/entities/mappers/MapperBOtoDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/exceptions/DonneesManquantesException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/exceptions/FichierInaccessibleException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/exceptions/FichierManquantException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/exceptions/QuestionnaireManquantException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockDonneesManquantes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockManquant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockOk.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockQuestionnaireInaccessible.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/impl/mocks/QuestionnaireInterfaceMockVide.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG/models/QuestionnaireInterface.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717489571421</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fonctionnement des tests">
+      <created>1717492716167</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717492716167</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,6 +220,7 @@
     <MESSAGE value="création de la classe ServiceChargerquestionnaireImpl et réglage des méthodes dans la classe QuestionBO.java et QuestionnaireDTO.java" />
     <MESSAGE value="Ajout d'un cas d'usage pour la fonction ChargerQuestionnaire" />
     <MESSAGE value="basculement de fichiers dans les bons dossiers" />
-    <option name="LAST_COMMIT_MESSAGE" value="basculement de fichiers dans les bons dossiers" />
+    <MESSAGE value="Fonctionnement des tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fonctionnement des tests" />
   </component>
 </project>

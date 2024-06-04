@@ -90,9 +90,8 @@ public class ServiceImportationQuestionnaireTest {
         try{
             // Vérifier que l'importation lance une FichierVideException
             FichierIllisibleException FichierInaccException = assertThrows(FichierIllisibleException.class, () -> {
-                serviceQuestionnaireImportImpl.chargerQuestionnaire("src/main/resources/questionsQuizz_V1.1.csv", 7);
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("/home/etudiants/info/mtrupin/IdeaProjects/BUT2-R4.02-2024-Alt-1_QPUG-questionnaire-SME/src/main/resources/questionsQuizz_V1.1.csv", 7);
             });
-
         }
         catch (Exception e){
             System.out.println("Erreur inattendu dans le test getQuestionnairevalideTest");
@@ -100,7 +99,7 @@ public class ServiceImportationQuestionnaireTest {
 
     }
 
-    //@Test
+    @Test
         // Test 5
         // quand toutes les colonnes ne sont pas remplies
     void getQuestionnaireDonneesManquantesTest(){
@@ -110,7 +109,7 @@ public class ServiceImportationQuestionnaireTest {
         try{
             // Vérifier que l'importation lance une FichierVideException
             DonneesManquantesException FichierInaccException = assertThrows(DonneesManquantesException.class, () -> {
-                serviceQuestionnaireImportImpl.chargerQuestionnaire("src/main/resources/test/FichierDonneesManquantes.csv", 1);
+                serviceQuestionnaireImportImpl.chargerQuestionnaire("/home/etudiants/info/mtrupin/IdeaProjects/BUT2-R4.02-2024-Alt-1_QPUG-questionnaire-SME/src/main/resources/test/FichierDonneesManquantes.csv", 1);
             });
 
         }
