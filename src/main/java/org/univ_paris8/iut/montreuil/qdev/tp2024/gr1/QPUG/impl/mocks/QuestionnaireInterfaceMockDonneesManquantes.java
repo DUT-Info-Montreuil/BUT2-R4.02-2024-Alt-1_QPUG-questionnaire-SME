@@ -1,11 +1,8 @@
 package org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.impl.mocks;
 
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.entities.dto.QuestionnaireDTO;
-import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.exceptions.DonneesManquantesException;
-import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.exceptions.FichierInaccessibleException;
-import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.exceptions.FichierManquantException;
-import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.exceptions.QuestionnaireManquantException;
-import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.models.QuestionnaireInterface;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.*;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.services.models.QuestionnaireInterface;
 
 
 public class QuestionnaireInterfaceMockDonneesManquantes implements QuestionnaireInterface {

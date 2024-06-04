@@ -1,13 +1,12 @@
 package org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.impl.mocks;
 
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.entities.dto.QuestionnaireDTO;
-import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.models.QuestionnaireInterface;
-import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.FichierInaccessibleException;
-import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.FichierManquantException;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.*;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.services.models.QuestionnaireInterface;
 
-public class QuestionnaireInterfaceMockOk implements QuestionnaireInterface {
+public class QuestionnaireInterfaceMockManquant implements QuestionnaireInterface {
     public QuestionnaireDTO chargerQuestionnaire(String cheminVersFichierCSV, int idQuestionnaire) throws FichierInaccessibleException, FichierManquantException {
-        return new QuestionnaireDTO(idQuestionnaire);
+        throw new FichierManquantException("fichier manquant");
     }
 
     //public QuestionBO getQuestionBO() {} ;
