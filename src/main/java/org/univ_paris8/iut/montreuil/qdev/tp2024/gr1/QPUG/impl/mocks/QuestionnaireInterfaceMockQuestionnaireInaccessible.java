@@ -6,8 +6,8 @@ import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.services.models.Questi
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.QuestionnaireManquantException;
 
 public class QuestionnaireInterfaceMockQuestionnaireInaccessible implements QuestionnaireInterface {
-    public QuestionnaireDTO chargerQuestionnaire(String cheminVersFichierCSV, int idQuestionnaire) throws FichierInaccessibleException, FichierManquantException, QuestionnaireManquantException {
-        throw new FichierInaccessibleException("Questionnaire inexistant à l'interieur du fichier");
+    public QuestionnaireDTO chargerQuestionnaire(String cheminVersFichierCSV, int idQuestionnaire) throws FichierIllisibleException, FichierManquantException, QuestionnaireManquantException {
+        throw new FichierIllisibleException("Questionnaire inexistant à l'interieur du fichier");
     }
 
 }

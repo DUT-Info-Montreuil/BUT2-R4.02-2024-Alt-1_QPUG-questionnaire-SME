@@ -6,20 +6,22 @@ import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.entities.dto.QuestionD
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.entities.dto.QuestionnaireDTO;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.services.models.QuestionnaireInterface;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.DonneesManquantesException;
-import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.FichierInaccessibleException;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.FichierIllisibleException;
+
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.FichierManquantException;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.QuestionnaireManquantException;
 
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.File;
 
 public class ServiceChargerquestionnaireImpl implements QuestionnaireInterface {
     @Override
-    public QuestionnaireDTO chargerQuestionnaire(String cheminVersFichierCSV, int idQuestionnaire) throws FichierInaccessibleException, FichierManquantException {
-
-        if (cheminVersFichierCSV.length() == 0)
-            throw new FichierManquantException("Rentrez le bon chemin de fichier : chemin vide.");
+    public QuestionnaireDTO chargerQuestionnaire(String cheminVersFichierCSV, int idQuestionnaire) throws FichierIllisibleException, FichierManquantException {
+        File file = new File(cheminVersFichierCSV);
+        if (cheminVersFichierCSV.length() == 0 || !file.exists())
+            throw new FichierManquantException("Rentrez le bon chemin de fichier : chemin vide ou fichier inexistant.");
         try(CSVReader reader = new CSVReader(new FileReader(cheminVersFichierCSV))){
             List<String[]> lettreSuivante;
 
@@ -42,7 +44,7 @@ public class ServiceChargerquestionnaireImpl implements QuestionnaireInterface {
             return questionnaireDTO;
 
         }catch(Exception e){
-            throw new FichierInaccessibleException("Le fichier est inaccessible.");
+            throw new FichierIllisibleException("Fichier illisible.");
         }
     }
 }

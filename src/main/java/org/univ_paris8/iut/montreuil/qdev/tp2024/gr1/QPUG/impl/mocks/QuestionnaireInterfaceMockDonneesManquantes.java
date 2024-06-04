@@ -6,7 +6,7 @@ import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.services.models.Questi
 
 
 public class QuestionnaireInterfaceMockDonneesManquantes implements QuestionnaireInterface {
-    public QuestionnaireDTO chargerQuestionnaire(String cheminVersFichierCSV, int idQuestionnaire) throws FichierInaccessibleException, FichierManquantException, QuestionnaireManquantException, DonneesManquantesException {
+    public QuestionnaireDTO chargerQuestionnaire(String cheminVersFichierCSV, int idQuestionnaire) throws FichierIllisibleException, FichierManquantException, QuestionnaireManquantException, DonneesManquantesException {
         throw new DonneesManquantesException("données manquantes");
     }
 
