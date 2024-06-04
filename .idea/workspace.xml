@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e274a7a5-cb52-42de-aa57-c57669a637c1" name="Changes" comment="Ajout d'un cas d'usage pour la fonction ChargerQuestionnaire" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2hEyqAf3uBnc8ZrOKQ1t5cZUZ5k" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gaspa/IdeaProjects/BUT2-R4.02-2024-Alt-1_QPUG-questionnaire-SME/src/test/java/org/univ_paris8/iut/montreuil/qdev/tp2024/gr1/QPUG&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gaspa\IdeaProjects\BUT2-R4.02-2024-Alt-1_QPUG-questionnaire-SME\src\test\java\org\univ_paris8\iut\montreuil\qdev\tp2024\gr1\QPUG" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.impl.mocks" />
+      <recent name="org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.models" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e274a7a5-cb52-42de-aa57-c57669a637c1" name="Changes" comment="" />
+      <created>1717173720061</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717173720061</updated>
+    </task>
+    <task id="LOCAL-00001" summary="creating branch">
+      <created>1717173811498</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717173811498</updated>
+    </task>
+    <task id="LOCAL-00002" summary="creation de la structure du package test : packages, mocks, classe de test">
+      <created>1717179844716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717179844716</updated>
+    </task>
+    <task id="LOCAL-00003" summary="création de la classe ServiceChargerquestionnaireImpl et réglage des méthodes dans la classe QuestionBO.java et QuestionnaireDTO.java">
+      <created>1717425916585</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717425916585</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Ajout d'un cas d'usage pour la fonction ChargerQuestionnaire">
+      <created>1717426746517</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717426746517</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="creating branch" />
+    <MESSAGE value="creation de la structure du package test : packages, mocks, classe de test" />
+    <MESSAGE value="création de la classe ServiceChargerquestionnaireImpl et réglage des méthodes dans la classe QuestionBO.java et QuestionnaireDTO.java" />
+    <MESSAGE value="Ajout d'un cas d'usage pour la fonction ChargerQuestionnaire" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'un cas d'usage pour la fonction ChargerQuestionnaire" />
+  </component>
+</project>
