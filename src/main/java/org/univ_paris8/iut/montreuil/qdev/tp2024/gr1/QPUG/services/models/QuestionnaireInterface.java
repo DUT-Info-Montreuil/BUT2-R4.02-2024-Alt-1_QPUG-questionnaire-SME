@@ -6,8 +6,10 @@ import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.Fichi
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.*;
 import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.utils.exceptions.QuestionnaireManquantException;
 
+import java.util.ArrayList;
+
 public interface QuestionnaireInterface {
-    public QuestionnaireDTO chargerQuestionnaire(String cheminVersFichierCSV, int idQuestionnaire) throws FichierIllisibleException, FichierManquantException, QuestionnaireManquantException, DonneesManquantesException;
+    public ArrayList<QuestionnaireDTO> chargerQuestionnaire(String cheminVersFichierCSV) throws FichierIllisibleException, FichierManquantException, QuestionnaireManquantException, DonneesManquantesException;
 
     //public QuestionBO getQuestionBO() {} ;
     //public QuestionnaireDTO createQuestionnaire(){} ;

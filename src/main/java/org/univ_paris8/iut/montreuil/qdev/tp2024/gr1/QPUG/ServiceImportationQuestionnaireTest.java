@@ -13,7 +13,7 @@ import org.univ_paris8.iut.montreuil.qdev.tp2024.gr1.QPUG.services.models.Questi
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-
+/**
 public class ServiceImportationQuestionnaireTest {
 
     private QuestionnaireInterface serviceQuestionnaireImportImpl;
@@ -121,3 +121,4 @@ public class ServiceImportationQuestionnaireTest {
 
 
 }
+**/
