@@ -18,7 +18,7 @@ import java.io.File;
 
 public class ServiceChargerquestionnaireImpl implements QuestionnaireInterface {
     @Override
-    public ArrayList<QuestionnaireDTO> chargerQuestionnaire(String cheminVersFichierCSV) throws FichierIllisibleException, FichierManquantException, DonneesManquantesException, QuestionnaireManquantException {
+    public ArrayList<QuestionnaireDTO> chargerQuestionnaire(String cheminVersFichierCSV) throws FichierIllisibleException, FichierManquantException, DonneesManquantesException {
         File file = new File(cheminVersFichierCSV);
         if (cheminVersFichierCSV.length() == 0 || !file.exists())
             throw new FichierManquantException("Rentrez le bon chemin de fichier : chemin vide ou fichier inexistant.");
